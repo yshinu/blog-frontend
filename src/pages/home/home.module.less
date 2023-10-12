@@ -1,0 +1,75 @@
+@import url("../../root.less");
+.wrapper {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+
+
+  .header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .name {
+        font-size: 2.5rem;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+      }
+  }
+  .menu{
+    position: absolute;
+    left: 1%;   
+    top: 2%;
+    img{
+        width: 3vw;
+        height: 3vh;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        
+    }
+  }
+}
+.footer {
+  background-color:@--bg-color;
+  width: 100vw;
+  height: 30vh;
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+    .input {
+      background: rgba(255, 255, 255, 0.08);
+      width: 15vw;
+      height: 4vh;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      color: #eeeeee64;
+    }
+    button {
+      background-color: @--primary-color;
+      width: 6vw;
+      height: 4vh;
+      border: 1px solid @--primary-color;
+      color: #eee;
+      border-radius: 5px;
+      &:hover {
+        border: 1px solid #aaa;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.07);
+      }
+    }
+  }
+}
